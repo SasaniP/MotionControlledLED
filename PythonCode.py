@@ -91,9 +91,9 @@ while(cap.isOpened()):
                       
                     # 1-D linear interpolant to a function
                     # with given discrete data points 
-                    # (Hand range 30 - 240, Brightness range 0 - 100),
+                    # (Hand range 15 - 220, Brightness range 0 - 100),
                     # evaluated at length.
-                    b_level = int(np.interp(L,[30,240],[0,23]))
+                    b_level = int(np.interp(L,[30,250],[0,23]))
                 
                     print(b_level)
                     intensity = intensity_list[b_level]
